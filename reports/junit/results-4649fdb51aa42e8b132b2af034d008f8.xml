@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="7.594" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-06-19T11:01:13" tests="0" file="cypress/e2e/features/carRental/search.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Car Rental Search" timestamp="2025-06-19T11:01:13" tests="1" time="7.560" failures="1">
+    <testcase name="Car Rental Search User searches for car rentals with valid data" time="0.000" classname="User searches for car rentals with valid data">
+      <failure message="Timed out retrying after 4000ms: Expected to find content: &apos;What’s your pick-up location?&apos; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find content: 'What’s your pick-up location?' but never did.
+    at Context.eval (https://cars.vueling.com/__cypress/tests?p=cypress/e2e/features/carRental/search.feature:15582:12)
+    at Registry.runStepDefininition (https://cars.vueling.com/__cypress/tests?p=cypress/e2e/features/carRental/search.feature:8546:48)
+    at Object.fn (https://cars.vueling.com/__cypress/tests?p=cypress/e2e/features/carRental/search.feature:14941:43)
+    at runStepWithLogGroup (https://cars.vueling.com/__cypress/tests?p=cypress/e2e/features/carRental/search.feature:14607:29)
+    at Context.eval (https://cars.vueling.com/__cypress/tests?p=cypress/e2e/features/carRental/search.feature:14937:62)
+    at getRet (https://cars.vueling.com/__cypress/runner/cypress_runner.js:120941:20)
+    at tryCatcher (https://cars.vueling.com/__cypress/runner/cypress_runner.js:1777:23)
+    at Promise.attempt.Promise.try (https://cars.vueling.com/__cypress/runner/cypress_runner.js:4285:29)
+    at Context.thenFn (https://cars.vueling.com/__cypress/runner/cypress_runner.js:120952:66)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

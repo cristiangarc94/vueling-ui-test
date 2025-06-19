@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.573" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-06-19T11:01:32" tests="0" file="cypress/e2e/features/carRental/search.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Car Rental Search" timestamp="2025-06-19T11:01:32" tests="1" time="10.513" failures="0">
+    <testcase name="Car Rental Search User searches for car rentals with valid data" time="10.433" classname="User searches for car rentals with valid data">
+    </testcase>
+  </testsuite>
+</testsuites>
