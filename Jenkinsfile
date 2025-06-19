@@ -1,44 +1,43 @@
 pipeline {
   agent any
 
-  environment {
-    CI = 'true'
+  tools {
+    nodejs 'node'
   }
 
-  tools {
-    nodejs 'node' // Asegúrate de tener Node configurado en Jenkins
+  environment {
+    CI = 'true'
   }
 
   stages {
     stage('Checkout') {
       steps {
-       echo 'Usando proyecto local'
+        git 'https://github.com/cristiangarc94/vueling-ui-test.git'
       }
     }
 
-
-    stage('Install dependencies') {
+    stage('Install Dependencies') {
       steps {
         sh 'npm ci'
       }
     }
 
-    stage('Run Cypress tests') {
+    stage('Run Cypress Tests') {
       steps {
         sh 'npx cypress run'
       }
     }
 
-    stage('Publish JUnit Results') {
+    stage('Publish JUnit Report') {
       steps {
-        junit 'reports/junit/results-*.xml'
+        junit 'reports/junit/*.xml'
       }
     }
   }
 
   post {
     always {
-      archiveArtifacts artifacts: 'reports/junit/results-*.xml', allowEmptyArchive: true
+      archiveArtifacts artifacts: 'reports/junit/*.xml', allowEmptyArchive: true
     }
   }
 }
