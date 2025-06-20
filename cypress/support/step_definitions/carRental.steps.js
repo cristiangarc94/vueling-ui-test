@@ -24,7 +24,7 @@ Given("accepts cookies", () => {
 });
 
 When("they select pickup location as {string}", (location) => {
-  cy.contains(locationSelectors.pickupFieldLabel).click().click();
+  cy.get(locationSelectors.pickupField).click();
   cy.get(locationSelectors.pickupInput)
     .clear()
     .type(location, { delay: 100 });

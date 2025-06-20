@@ -3,7 +3,7 @@ export const cookieSelectors = {
   };
   
   export const locationSelectors = {
-    pickupFieldLabel: "What’s your pick-up location?",
+    pickupField: 'button[ng-click="openPickupLocationModal($event)"]',
     pickupInput: "#search-cars-pickup-modal-input",
     pickupSuggestionsContainer: ".ct-side-panel-locations-location-name",
   };
