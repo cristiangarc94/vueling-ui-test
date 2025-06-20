@@ -13,8 +13,8 @@
     "mocha-junit-reporters": "^1.23.6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "cypress run --reporter mocha-junit-reporter --reporter-options mochaFile=reports/junit/results-[hash].xml"
+  },  
   "keywords": [],
   "author": "",
   "license": "ISC",
